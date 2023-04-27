@@ -23,22 +23,49 @@ export default function Home() {
           <br /> functional but also beautiful and enjoyable to use. I am always
           up to date with <br /> the latest trends in technology and design.
         </p>
-        <a href="mailto:maurovera069@gmail.com">Contact</a>
+        <a className={styles.contact} href="mailto:maurovera069@gmail.com">
+          Contact
+        </a>
 
         <div className={styles.icons}>
-          <Image
-            src="/assets/linkedin.svg"
-            height={25}
-            width={25}
-            alt="linkedin"
-          />
-          <Image src="/assets/github.svg" height={25} width={25} alt="github" />
-          <Image
-            src="/assets/youtube.svg"
-            height={25}
-            width={35}
-            alt="youtube"
-          />
+          <a
+            className={styles.link}
+            href="https://www.linkedin.com/in/maurovera/"
+            target="_blank"
+          >
+            <Image
+              src="/assets/linkedin.svg"
+              height={25}
+              width={25}
+              alt="linkedin"
+            />
+          </a>
+
+          <a
+            className={styles.link}
+            href="https://github.com/Mauro069"
+            target="_blank"
+          >
+            <Image
+              src="/assets/github.svg"
+              height={25}
+              width={25}
+              alt="github"
+            />
+          </a>
+
+          <a
+            className={styles.link}
+            href="https://www.youtube.com/channel/UCUORUOKKg8Ezj4tBJb_cRUQ"
+            target="_blank"
+          >
+            <Image
+              src="/assets/youtube.svg"
+              height={25}
+              width={35}
+              alt="youtube"
+            />
+          </a>
         </div>
       </main>
     </>
