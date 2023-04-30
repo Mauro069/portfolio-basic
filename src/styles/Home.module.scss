@@ -1,7 +1,6 @@
 $black: #212121;
 
 .container {
-  width: 100vw;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -88,9 +87,9 @@ $black: #212121;
     }
 
     .icons {
-      right: 0;
-      left: 0;
-      margin-right: 0;
+      position: static;
+      margin: 0;
+      padding-bottom: 1.5rem;
     }
   }
 }
