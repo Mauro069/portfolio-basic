@@ -1,6 +1,7 @@
 import Image from "next/image";
 import styles from "../styles/Home.module.scss";
 import Head from "next/head";
+import va from "@vercel/analytics";
 
 export default function Home() {
   return (
@@ -23,7 +24,11 @@ export default function Home() {
           <br /> functional but also beautiful and enjoyable to use. I am always
           up to date with <br /> the latest trends in technology and design.
         </p>
-        <a className={styles.contact} href="mailto:maurovera069@gmail.com">
+        <a
+          onClick={() => va.track("contact")}
+          className={styles.contact}
+          href="mailto:maurovera069@gmail.com"
+        >
           Contact
         </a>
 
@@ -32,6 +37,7 @@ export default function Home() {
             className={styles.link}
             href="https://www.linkedin.com/in/maurovera/"
             target="_blank"
+            onClick={() => va.track("linkedin")}
           >
             <Image
               src="/assets/linkedin.svg"
@@ -45,6 +51,7 @@ export default function Home() {
             className={styles.link}
             href="https://github.com/Mauro069"
             target="_blank"
+            onClick={() => va.track("github")}
           >
             <Image
               src="/assets/github.svg"
@@ -58,6 +65,7 @@ export default function Home() {
             className={styles.link}
             href="https://www.youtube.com/channel/UCUORUOKKg8Ezj4tBJb_cRUQ"
             target="_blank"
+            onClick={() => va.track("youtube")}
           >
             <Image
               src="/assets/youtube.svg"
