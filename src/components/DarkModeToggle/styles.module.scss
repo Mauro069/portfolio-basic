@@ -1,0 +1,20 @@
+.toggleButton {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: 1rem;
+  margin-right: 1rem;
+  padding: 0.5rem;
+  color: var(--secondary);
+  background: var(--primary);
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 12px;
+  cursor: pointer;
+  font-weight: 500;
+
+  &:hover {
+    transition-duration: 0.3s;
+    transform: scale(1.1);
+  }
+}

@@ -1,7 +1,9 @@
+import DarkModeToggle from "@/components/DarkModeToggle";
 import Image from "next/image";
-import styles from "../styles/Home.module.scss";
 import Head from "next/head";
 import va from "@vercel/analytics";
+
+import styles from "../styles/Home.module.scss";
 
 export default function Home() {
   return (
@@ -9,7 +11,9 @@ export default function Home() {
       <Head>
         <title>Mauro Vera</title>
       </Head>
+
       <main className={styles.container}>
+        <DarkModeToggle />
         <Image src="/assets/cover.png" alt="cover" width={125} height={125} />
         <span>
           Hi! I&apos;m Mauro, <br /> <b>Fullstack developer</b> <br /> with{" "}

@@ -5,5 +5,17 @@
   padding: 0;
   box-sizing: border-box;
   outline: none;
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
+}
+
+body {
+  --primary: #212121;
+  --secondary: #ffffff;
+  --bg_icons: transparent;
+
+  &.dark-mode {
+    --primary: #ffffff;
+    --secondary: #212121;
+    --bg_icons: #ffffff;
+  }
 }
