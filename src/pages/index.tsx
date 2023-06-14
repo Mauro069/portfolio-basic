@@ -28,13 +28,17 @@ export default function Home() {
           <br /> functional but also beautiful and enjoyable to use. I am always
           up to date with <br /> the latest trends in technology and design.
         </p>
-        <a
-          onClick={() => va.track("contact")}
-          className={styles.contact}
-          href="mailto:maurovera069@gmail.com"
-        >
-          Contact
-        </a>
+        <div className={styles.buttons}>
+          <a className={styles.contact} href="mailto:maurovera069@gmail.com">
+            Contact
+          </a>
+          <a
+            className={styles.agend}
+            href="https://calendly.com/maurovera/30min"
+          >
+            Calendly
+          </a>
+        </div>
 
         <div className={styles.icons}>
           <a

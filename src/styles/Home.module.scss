@@ -24,22 +24,36 @@
     font-weight: 300;
   }
 
-  .contact {
-    text-decoration: none;
-    padding: 1rem 3rem;
-    font-weight: 600;
-    color: var(--secondary);
-    border: none;
-    background-color: var(--primary);
-    border-radius: 1rem;
-    font-size: 28px;
-    cursor: pointer;
+  .buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
 
-    &:hover {
-      transition-duration: 0.3s;
-      transform: scale(1.1);
+    a {
+      text-decoration: none;
+      padding: 1rem 3rem;
+      font-weight: 600;
+      color: var(--secondary);
+      border: none;
+      background-color: var(--primary);
+      border-radius: 1rem;
+      font-size: 28px;
+      cursor: pointer;
+
+      &:hover {
+        transition-duration: 0.3s;
+        transform: scale(1.1);
+      }
+    }
+
+    .agend {
+      background-color: #0069ff;
     }
   }
+
+
 
   .icons {
     background-color: var(--bg_icons);
